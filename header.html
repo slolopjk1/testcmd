@@ -3,14 +3,71 @@
 <head>
     <meta charset="utf-8">
     <style>
+        #cart .btn-login {
+            position: absolute;
+            top: 21px;
+            left: 88px;
+            max-height: 18px;
+            padding: 0 2px;
+            color: #fff;
+            text-align: center;
+            font-size: 12px;
+            border-radius: 2px;
+            background: #dc1400;
+            border: 1px solid #ea7266;
+            margin: 0;
+        }
+
+        .logo {
+            background: url(yogiyo_logo.png);
+            background-size: 72px;
+            width: 72px;
+            height: 30px;
+            text-indent: -99999em;
+            overflow: hidden;
+            margin: 15px 10px;
+            cursor: pointer;
+        }
+
+        .search {
+            padding: 125px 100px 70px 100px;
+            background-image: url(../image/bg-top.png?v=1);
+            background-color: #3b2114;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #search .form-control{
+            border: none;
+            border-right:  0;
+            border-radius: 4px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            height: 40px;
+            -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,0);
+                    box-shadow: inset 0 0 0 rgba(0,0,0,0);
+            -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+                    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        }
+
+        #search .ico-loc{
+            background: url(image2.png);
+            background-size: 40px;
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            margin: 2px;
+            border: none;
+        }
+
         header{
-            border: 4px solid brown;
             position: fixed;
             left: 0;
             top: 0;
             width: 100%;
-            height: 100px;
-            background-color: antiquewhite;
+            padding-bottom: 9px;
+            border-bottom: 1px solid #eee;
+            background-color: #DC1400;
             z-index: 4;
         }
         body{
@@ -18,20 +75,33 @@
             margin-bottom: 120px;
         }
         footer{
-            border: 4px solid brown;
+            border: 1px solid gray;
             position: fixed;
             left: 0;
             bottom: 0;
             width: 100%;
-            height: 100px;
-            background-color: antiquewhite;
+            padding-bottom: 65px;
+            font-size: 12px;
+            background-color: white;
         }
         
     </style>
 </head>
 <header>
-    This is a header
+    <div id=cart>
+        <h3 class="logo">요기요</h3> 
+        <button type="button" class="btn-login">로그인 <span>|</span> 회원가입</button>
+    </div>
+    <div id=search>
+            <button type="button" class=ico-loc>&nbsp;</button>
+            <input type="search" class="form-control ng-pristine ng-scope ng-invalid ng-invalid-required ng-valid-minlength ng-touched" name="address_input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="예) 역삼동,신림동" ng-minlength="1" ng-required="true" ng-model="session_storage.location.address_input" bs-dropdown="" ng-focus="show_location_search()" required="required">
+            <button type="button">검색</button>
+    </div>
 </header>
+<body>
+   
+</body>
 <footer>
-    This is a footer
+    <h4>(유)알지피코리아</h4>
+    서울시 강남구 테헤란로 5길 7 KG타워 10, 11, 12층 유한회사 알지피코리아|대표자 : 강신봉|사업자등록번호:211-88-68802 사업자정보확인통신판매업신고:제 2011-서울강남-03322호|개인정보담당자 : privacy@yogiyo.co.kr|제휴문의 : partnership@rgpkorea.co.kr|고객만족센터 : 02-3447-3612 (24시간, 연중무휴) support@yogiyo.co.kr|호스트서비스사업자 : (주)심플렉스인터넷
 </footer>
